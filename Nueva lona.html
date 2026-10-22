@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nueva Lona | Catálogo</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5ef;
+    color: #19271f;
+}
+
+header {
+    background: #173e2e;
+    color: white;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    letter-spacing: 2px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 90px 8%;
+    background: #e4e9d8;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 75px);
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #245b43;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: auto;
+    color: #58665c;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background: #245b43;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.catalogo {
+    padding: 65px 8%;
+}
+
+.catalogo h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.intro {
+    color: #66736b;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.producto {
+    background: white;
+    padding: 12px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #00000008;
+}
+
+.producto img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #e8ebe2;
+}
+
+.sin-foto {
+    height: 240px;
+    border-radius: 12px;
+    background: #e8ebe2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #66736b;
+    text-align: center;
+}
+
+.detalles {
+    padding: 18px 7px 10px;
+}
+
+.detalles h3 {
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.detalles p {
+    color: #66736b;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #245b43;
+}
+
+.contacto {
+    background: #173e2e;
+    color: white;
+    text-align: center;
+    padding: 65px 8%;
+}
+
+.contacto h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    line-height: 1.7;
+    color: #d3ddd5;
+}
+
+.contacto .boton {
+    background: #d6f078;
+    color: #173e2e;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    color: #66736b;
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    .productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    header {
+        padding: 20px 5%;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    .catalogo {
+        padding: 45px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .producto img,
+    .sin-foto {
+        height: 260px;
+    }
+
+    header h2 {
+        font-size: 19px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>NUEVA LONA</h2>
+    <a href="#catalogo">Catálogo ↗</a>
+</header>
+
+<section class="hero">
+    <h1>Lo viejo se transforma<br>en algo <span>nuevo.</span></h1>
+
+    <p>
+        Tu lona vieja merece una segunda vida.
+        La transformamos en productos útiles, originales
+        y hechos para acompañarte por mucho más tiempo.
+    </p>
+
+    <a href="#catalogo" class="boton">Ver catálogo ↓</a>
+</section>
+
+<section class="catalogo" id="catalogo">
+    <h2>Nuestros productos</h2>
+
+    <p class="intro">
+        Descubre nuetros productos hechos a partir de lonas reutilizadas.
+    </p>
+
+    <div class="productos">
+
+        <!-- PRODUCTO 1 -->
+        <article class="producto">
+            <img src="MONEDERO.jpeg">
+            <div class="detalles">
+                <h3>Monedero</h3>
+                <p>Una herramienta útil y bonita</p>
+                <div class="precio">Q 50.00</div>
+            </div>
+        </article>
+
+        <!-- PRODUCTO 2 -->
+        <article class="producto">
+            <img src="caja.jpeg">
+            <div class="detalles">
+                <h3>Organizador Multiusos</h3>
+                <p>Práctica y original cesta organizadora</p>
+                <div class="precio">Q 50.00</div>
+            </div>
+        </article>
+        
+<!-- PRODUCTO 3 -->
+        <article class="producto">
+            <img src="bolso.jpeg">
+            <div class="detalles">
+                <h3>Bolsa de mano</h3>
+                <p>Una bolsa útil para poder llevar tus cosas</p>
+                <div class="precio">Q 50.00</div>
+            </div>
+        </article>
+        
+         <!-- PRODUCTO 4 -->
+        <article class="producto">
+            <img src="lonchera.jpeg">
+            <div class="detalles">
+                <h3>Lonchera</h3>
+                <p>lonchera para poder llevar comida o cosas</p>
+                <div class="precio">Q 50.00</div>
+            </div>
+        </article>
+        
+         <!-- PRODUCTO 5 -->
+        <article class="producto">
+            <img src="bolso%20para%20cargar%20celular.jpeg">
+            <div class="detalles">
+                <h3>bolsa para cargar celulares</h3>
+                <p>resuelve tu problema para no dejar donde sea cargando tu celular</p>
+                <div class="precio">Q 50.00</div>
+            </div>
+        </article>
+        
+
+    </div>
+</section>
+
+<section class="contacto" id="contacto">
+    <h2>Dale una nueva vida a tu lona</h2>
+
+    <p>
+        ¿Te interesa alguno de nuestros productos?
+        Contactanos para obtener más información.
+    </p>
+
+    <!-- Reemplazá el enlace por tu WhatsApp -->
+    <a
+        class="boton"
+        href="https://wa.me/502TU_NUMERO"
+        target="_blank"
+        rel="noopener"
+    >
+        Contactar por WhatsApp
+    </a>
+</section>
+
+<footer>
+    © <span id="anio"></span> Nueva Lona · Reutilizar también es crear.
+</footer>
+
+<script>
+document.getElementById("anio").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
